@@ -1,4 +1,4 @@
-# Repositório dos Projetos desenvolvidos no Bootcamp Santarnder Fullstack Dio
+# Bootcamp Santarnder Fullstack Dio
 
 ## Oque iremos encontrar dentro deste repositório:
 - Desafios de códidos
