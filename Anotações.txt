@@ -29,3 +29,20 @@
 - flex: abreviação para as 3 propriedades anteriores
 - order: ordem de distribuição e listagens dos itens
 - align-self: define o alinhamento do iten específico
+
+### Flex-direction
+- é a propriedade que estabelece o eixo principal do conrtainer, definindo assim a direção que os flex são colocados no flex container
+
+#### Os eixos
+- row (vem por padrão): à direção do texto, da esquerda para a direcionamento
+- row-reverse: sentido oposto à direção do texto, ou seja, da direita para a esquerda
+- colum: ordenação de cima para baixo, em coluna unica
+- colum-reverse: ordenação inversa do colum, de baixo para cima
+
+### Flex-wrap
+- é a propriedade que define se os itens devem ou não quebrar a linha, por padrão eles não qiuebram linhas,
+isso faz com que os flez itens sejam compatados alem do limite do conteúdo.
+- nowrap: é o padrão, não permite a quebra de linha.
+- wrap: permite a quebra de linha, assim que um dos flez itens não puder mais ser compactado.
+- wrap-reverse: permite a quebra de linha assim que um dos flez itens não puder mais ser compactado, porém na direção
+contraria a linha.
