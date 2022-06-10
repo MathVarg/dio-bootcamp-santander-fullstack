@@ -1,2 +1,31 @@
 # **Anotações pertinentes ao curso de FullStack**
-- em breve teremos informações aqui dentro
+## HTML5 e CSS3
+- 
+
+## Flex Box
+- Projetado como modelo de layout unidimensional, oeferece distribuição de espaõ entre itens em uma interface
+
+### Flex Container
+- é a tag que envolve os itens, aplicamos a propriedade "display:flex" para transformar todos os itens filhos em flex itens.
+-obs: pode ser utilizado em qualquer tipo de tag, a partir do momento que a tag tenha filhos podemos utilizar display flex.
+
+#### Propriedades relacionadas:
+- display: inicializador do container
+- flex-direction: direcionamento dos itens (linha ou coluna)
+- flex-wrap: quebra de linha ou não
+- flex-flow: abreviação do direction e wrap
+- justify-content: alinhamento dos itens de acordo com a direção
+- align-itens: alinhamento de acordo com o eixo do container
+- align-content: alinhar as linhas do container
+
+### Flex Itens
+- São os elementos filhos do Flex Container e tambem podem se tornar Flex Container
+- Ou seja temos um flex container(pai) que contem Flex itens(filho), que por sua vez podem se transofrmar em Flex Container(pai) e assim ter Flex itens(filho) e assim por diante, reaproveitando e reinventando o layout.
+
+#### Propriedades relacionadas:
+- flex-grow: define o fator de crecimento
+- flex-basis: define o tamanho inicial do iten antes da distribuição do espaco restante do container 
+- flex-shrink: capacdade de redução
+- flex: abreviação para as 3 propriedades anteriores
+- order: ordem de distribuição e listagens dos itens
+- align-self: define o alinhamento do iten específico
