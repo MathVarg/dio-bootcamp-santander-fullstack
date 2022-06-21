@@ -1,0 +1,115 @@
+<!--Align-self-->
+<!--
+    é a propriedade que estabelece o alinhamento de modo individual
+     sobre um determinado item.
+    Permite que o alinhamento padrão (ou o que estiver definido por
+     align-items) seja sobrescrito para ítens individuais.
+-->
+<!--Valores Possíveis-->
+<!--
+    auto: valor padrão, irá respeitar a definição de align-items do container.
+    flex-start: ao ínicio do container.
+    flex-end: ao final do container.
+    center: relativo ao centro de acordo com o eixo.
+    strech: ocupa todo os espaços relativos.
+    baseline: utiliza a lina base da tipografia
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos align-items</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;  
+           
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .items{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .strech{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <p>Align auto</p>
+    <section class="flex-container align-container">
+        <div class="items auto">AAA</div>
+        <div class="items auto">123</div>
+        <div class="items auto">Qualquer texto aqui só para ter um espaço com tamanho maior</div>
+        <div class="items auto">item 4</div>
+    </section>
+
+    <p>Align center, start, strech, end</p>
+    <section class="flex-container">
+        <div class="items center">AAA</div>
+        <div class="items start">123</div>
+        <div class="items strech">Qualquer texto aqui só para ter um espaço com tamanho maior</div>
+        <div class="items end">item 4</div>
+    </section>
+
+    <h1>column</h1>
+    <p>Align auto</p>
+    <section class="flex-container align-container column">
+        <div class="items auto">AAA</div>
+        <div class="items auto">123</div>
+        <div class="items auto">Qualquer texto aqui só para ter um espaço com tamanho maior</div>
+        <div class="items auto">item 4</div>
+    </section>
+
+    <p>Align center, start, strech, end</p>
+    <section class="flex-container column">
+        <div class="items center">AAA</div>
+        <div class="items start">123</div>
+        <div class="items strech">Qualquer texto aqui só para ter um espaço com tamanho maior</div>
+        <div class="items end">item 4</div>
+    </section>
+</body>
+</html>
